@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@import "./reset.css";
+@import "./variables.css";
+@import "./typography.css";
+
+
+@theme {
+  /* Brand */
+  --color-primary: var(--brand-orange);
+  --color-white: var(--brand-white);
+  --color-black: var(--brand-black);
+
+  /* Background */
+  --color-bg-dark: var(--bg-dark);
+  --color-bg-light: var(--bg-light);
+
+  /* Surface */
+  --color-surface-dark: var(--surface-dark);
+  --color-surface-light: var(--surface-light);
+
+  /* Text */
+  --color-text-dark: var(--text-dark);
+  --color-text-light: var(--text-light);
+
+  --color-text-secondary-dark: var(--text-secondary-dark);
+  --color-text-secondary-light: var(--text-secondary-light);
+
+  --color-text-muted: var(--text-muted);
+
+  /* Interactive */
+  --color-primary-hover: var(--primary-hover);
+  --color-text-hover: var(--text-hover);
+
+  /* Border */
+  --color-border-light: var(--border-light);
+  --color-border-dark: var(--border-dark);
+
+  /* Effects */
+  --color-overlay: var(--overlay);
+  --color-glow: var(--glow);
+}
+
+
+body {
+  font-family: var(--font-primary);
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+}
