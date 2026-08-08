@@ -1,6 +1,6 @@
 <template>
-    <nav class="font-medium uppercase text-sm tracking-[2px]">
-        <ul class="flex gap-10">
+    <nav  class="font-medium uppercase text-sm tracking-[1.5px]">
+        <ul class="flex flex-col  gap-8 lg:gap-9 lg:flex-row ">
             <li v-for="link in navigationLinks" :key="link.name"
             class="text-text-secondary-light hover:text-text-light"
             >
@@ -24,11 +24,14 @@
 </RouterLink>
             </li>
         </ul>
+
+
     </nav>
 </template>
 
 <script setup>
 import {navigationLinks} from '../../data/navigation';
+
 </script>
 
 <style lang="scss" scoped>
