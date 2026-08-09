@@ -50,7 +50,8 @@
       hover:bg-primary-hover
       hover:shadow-2xl
       shadow-primary
-    "
+      mt-8
+      "
   >
     GET A CONSULTATION
   </BaseButton>
