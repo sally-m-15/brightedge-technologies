@@ -1,6 +1,6 @@
 <template>
     <section
-        class="relative h-screen overflow-hidden bg-black"
+        class="relative main-h-screen w-full overflow-hidden bg-black"
     >
         <div
             class="pointer-events-none absolute inset-0 z-0 overflow-hidden"
@@ -38,24 +38,28 @@
             ></div>
         </div>
         <div 
-        class="flex "
+        class="flex"
                 >
-                <div class="w-2/5">
+                <div class="w-2/5 flex flex-col justify-between items-center py-24 ps-10">
                     <HeroContent />
-                    
+                    <HeroStats />
                 </div>
-                <div class="w-3/5 pt-10">
+                <div class="w-3/5 pt-10 relative">
                 <HeroImage />
+                   <div class="absolute bottom-20 right-10 z-50">
+                        <HeroFeatures />
+                    </div>
                 </div>
         </div>
-        
     </section>
 
 </template>
 
 <script setup>
 import HeroContent from './hero/HeroContent.vue';
+import HeroFeatures from './hero/HeroFeatures.vue';
 import HeroImage from './hero/HeroImage.vue';
+import HeroStats from './hero/HeroStats.vue';
 
 </script>
 

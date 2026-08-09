@@ -8,9 +8,7 @@
               M 0.27 0
               L 1 0
               L 1 1
-              L 0 1
-              L 0.78 1
-              L 0.11 0.76
+              L 0 1.5
               L 0.16 0.40
               L 0.21 0.08
               Q 0.23 0.005 0.27 0
@@ -32,8 +30,8 @@
           L 1000 0
           L 1000 1000
           L 0 1000
-          L 780 1000
-          L 110 760
+          L 780 1600
+          L 110 1000
           L 160 400
           L 210 80
           Q 230 5 270 0
@@ -54,9 +52,9 @@
           L 270 0
           Q 230 5 210 80
           L 160 400
-          L 110 760
-          L 0 1000
-          L 780 1000
+          L 110 750
+          L 0 1510
+          L 780 1002
         "
         fill="none"
         class="stroke-[#F5a623]"
@@ -66,7 +64,7 @@
       />
     </svg>
 
-    <div class="relative z-5 h-full w-full overflow-hidden">
+    <div class="relative z-5 h-full w-ful overflow-hidden ">
       <img
         src="../../../assets/images/bright-hero.png"
         alt="Modern smart lighting interior"
