@@ -1,9 +1,13 @@
 <template>
-  <AppNavbar />
-  <main>
-    <RouterView />
-  </main>
-  <AppFooter />
+    <div class="min-h-screen bg-bg-dark">
+        <AppNavbar />
+
+        <main class="pt-24">
+            <RouterView />
+        </main>
+
+        <AppFooter />
+    </div>
 </template>
 
 <script setup>
