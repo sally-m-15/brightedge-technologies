@@ -1,6 +1,6 @@
 <template>
     <section
-        class="relative main-h-screen w-full overflow-hidden bg-black"
+        class="relative min-h-screen w-full overflow-hidden bg-black"
     >
         <div
             class="pointer-events-none absolute inset-0 z-0 overflow-hidden"
@@ -38,18 +38,23 @@
             ></div>
         </div>
         <div 
-        class="flex flex-col"
+        class="flex flex-col lg:flex-row"
                 >
-                <div class="md:w-2/5 flex flex-col justify-between items-center py-10 md:py-20 container m-auto w-80 md:w-full md:pe-8">
+                <div class="lg:w-2/5 flex flex-col   justify-between items-center py-10 md:py-20">
                     <HeroContent />
-                    <HeroStats />
+                    <div class="hidden lg:block  w-full">
+                        <HeroStats />
+                    </div>
                 </div>
-                <div class="w-3/5 pt-10 relative">
+                <div class="lg:w-3/5 pt-10 relative">
                 <HeroImage />
-                   <div class="absolute bottom-20 right-10 z-50">
+                   <div class="absolute bottom-0 right-8 md:right-10 md:bottom-10 container mx-auto w-[85%] md:w-48 z-40">
                         <HeroFeatures />
                     </div>
                 </div>
+                <div class="lg:hidden container mx-auto w-[85%]">
+                        <HeroStats />
+                    </div>
         </div>
     </section>
 

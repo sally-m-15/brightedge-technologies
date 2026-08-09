@@ -1,5 +1,5 @@
 <template>
-    <div class="flex-col flex gap-8 items-start w-full h-full  ">
+    <div class="flex-col flex gap-8 items-start w-full h-full ps-10 ">
     <p
     class="flex w-fit items-center gap-3 rounded-full border border-border-dark px-5 py-2
      text-xs font-medium uppercase md:tracking-[0.2em] text-text-secondary-light"
@@ -10,7 +10,7 @@
     ></span>
   Intelligent Lighting Systems
 </p>
-<h1 class="flex flex-col text-5xl font-bold text-text-light tracking-[2px]">
+<h1 class="flex flex-col text-5xl md:text-[60px] xl:text-8xl font-bold text-text-light tracking-[2px]">
     Light that
     <span>
         <span class="text-primary">thinks</span>
@@ -22,7 +22,7 @@
     BrightEdge designs and engineers precision architectural lighting
     and smart control systems that adapt to how people live, work, and gather.
 </p>
-       <div class="flex flex-col md:flex-wrap gap-6">
+       <div class="flex flex-col  md:flex-row gap-6 w-full lg:flex-col xl:flex-row">
         <a
                 href="https://wa.me/00966598100466"
                 target="_blank"

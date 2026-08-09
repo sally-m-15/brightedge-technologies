@@ -1,5 +1,5 @@
 <template>
-  <div class="py-6 bg-black/60 backdrop-blur-md rounded-2xl border border-primary/40 shadow shadow-primary w-48 ps-2 flex flex-col gap-4">
+  <div class="py-6 bg-black/60 backdrop-blur-md rounded-2xl border border-primary/40 shadow shadow-primary ps-2 flex flex-col gap-4">
     
     <div class="flex items-center gap-4">
       <div class="">
