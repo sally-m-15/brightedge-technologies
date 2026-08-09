@@ -1,5 +1,5 @@
 <template>
-<div class="flex flex-wrap items-center gap-6 md:gap-8 pt-6 mt-4 border-t border-white/10 w-full z-10 relative">
+<div class="flex  flex-wrap items-center gap-6 md:gap-8 pt-6 mt-4 border-t border-white/10 w-full z-10 relative">
   
   <div class="flex items-center gap-3">
     <div class="p-2.5 rounded-full border border-primary/30 bg-primary/10 flex items-center justify-center shrink-0 w-10 h-10">

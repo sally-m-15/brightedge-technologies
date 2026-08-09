@@ -38,9 +38,9 @@
             ></div>
         </div>
         <div 
-        class="flex"
+        class="flex flex-col"
                 >
-                <div class="w-2/5 flex flex-col justify-between items-center py-24 ps-10">
+                <div class="md:w-2/5 flex flex-col justify-between items-center py-10 md:py-20 container m-auto w-80 md:w-full md:pe-8">
                     <HeroContent />
                     <HeroStats />
                 </div>
