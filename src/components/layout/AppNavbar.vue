@@ -8,7 +8,7 @@
         </div>
         <div class="hidden lg:block">
 <a
-  href="https://wa.me/00966598100466"
+  href="https://wa.me/01029817421"
   target="_blank"
   rel="noopener noreferrer"
 >
@@ -38,7 +38,7 @@
         >
             <NavbarNavigation />
 <a
-  href="https://wa.me/00966598100466"
+  href="https://wa.me/01029817421"
   target="_blank"
   rel="noopener noreferrer"
 >
