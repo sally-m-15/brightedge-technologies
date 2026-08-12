@@ -6,7 +6,11 @@
         <img
             src="../../assets/images/logo-white (1).png"
             alt="BrightEdge Technologies"
-            class="h-16 w-auto object-contain "
+            class="
+                h-16 
+                w-auto 
+                object-contain 
+                "
         />
     </router-link>
 </template>
