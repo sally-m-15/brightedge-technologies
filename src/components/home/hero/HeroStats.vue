@@ -6,7 +6,6 @@
             mt-4
             flex
             w-full
-            flex-wrap
             items-center
             justify-between
             border-t
@@ -80,7 +79,7 @@
                 <p
                     class="
                         mt-1
-                        whitespace-nowrap
+                        md:whitespace-nowrap
                         text-xs
                         tracking-[.5px]
                         text-text-secondary-light
