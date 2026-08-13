@@ -72,10 +72,12 @@
             class="relative z-5 h-full w-full overflow-hidden"
         >
             <img
-                src="../../../assets/images/bright-hero.png"
+                src="../../../assets/images/bright-hero.webp"
                 alt="Modern smart lighting interior"
                 class="h-full w-full object-cover object-center"
                 style="clip-path: url(#hero-image-clip);"
+                loading="eager"
+                fetchpriority="high"
             />
         </div>
     </div>
