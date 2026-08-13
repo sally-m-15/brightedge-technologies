@@ -77,6 +77,8 @@
                 class="h-full w-full object-cover object-center"
                 style="clip-path: url(#hero-image-clip);"
                 loading="eager"
+                width="1024"
+                height="1024"
                 fetchpriority="high"
             />
         </div>

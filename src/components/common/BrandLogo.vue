@@ -12,6 +12,8 @@
                 object-contain 
                 "
                 loading="eager"
+                width="300"
+                height="206"
         />
     </router-link>
 </template>
