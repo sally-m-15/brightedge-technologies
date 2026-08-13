@@ -44,7 +44,7 @@
                 flex
                 flex-col
                 text-5xl
-                font-bold
+                font-black
                 tracking-[2px]
                 text-text-light
                 md:text-[60px]
@@ -53,17 +53,28 @@
         >
             Light that
             <span>
-                <span class="text-primary">thinks</span>
-                with
+                <span               
+                    class="
+                    bg-linear-to-r
+                    from-[#2a1b0f]
+                    to-primary
+                    bg-clip-text
+                    text-transparent
+                    "
+                >
+                    thinks</span>
+                    with
             </span>
             your space.
         </h1>
         <p
             class="
-                text-md
+                md:text-lg
                 tracking-widest
                 text-text-secondary-light
                 md:w-110
+                text-xs
+                pe-6
             "
         >
             BrightEdge designs and engineers precision architectural
