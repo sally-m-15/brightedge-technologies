@@ -74,6 +74,7 @@
                 text-text-secondary-light
                 md:w-110
                 text-xs
+                font-medium
                 pe-6
             "
         >

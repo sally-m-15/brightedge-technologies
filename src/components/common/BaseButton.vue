@@ -10,7 +10,7 @@
       py-3 
       text-xs 
       md:text-[14px] 
-      font-medium 
+      font-black 
       uppercase 
       tracking-[1.5px] 
       transition-all 

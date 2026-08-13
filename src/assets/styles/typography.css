@@ -1,4 +1,3 @@
-
 @font-face {
   font-family: "Swiss721";
   src: url("../fonts/Swiss721-Light.otf") format("opentype");
@@ -21,4 +20,10 @@
   font-weight: 900;
   font-style: normal;
   font-display: swap;
+}
+
+@font-face {
+  font-family: "Swiss721 Fallback";
+  src: local("Arial");
+  size-adjust: 95%;
 }

@@ -68,7 +68,7 @@
                 <h4
                     class="
                         text-base
-                        font-bold
+                        font-black
                         leading-none
                         text-white
                         md:text-lg
