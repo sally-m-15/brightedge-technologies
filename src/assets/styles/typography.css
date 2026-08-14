@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Swiss721";
-  src: url("../fonts/Swiss721-Light.otf") format("opentype");
+  src: url("../fonts/Swiss721-Light.otf") format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: "Swiss721";
-  src: url("../fonts/Swiss721-Medium.otf") format("opentype");
+  src: url("../fonts/Swiss721-Medium.otf") format('woff2');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -16,7 +16,7 @@
 
 @font-face {
   font-family: "Swiss721";
-  src: url("../fonts/Swiss721BlackCondensedBT.ttf") format("truetype");
+  src: url("../fonts/Swiss721BlackCondensedBT.ttf") format('woff2');
   font-weight: 900;
   font-style: normal;
   font-display: swap;
