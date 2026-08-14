@@ -91,8 +91,8 @@
                 alt="Modern smart lighting interior"
                 class="h-full w-full object-cover object-center"
                 loading="eager"
-                width="512"
-                height="512"
+                width="412"
+                height="412"
                 fetchpriority="high"
             />
         </picture>
@@ -101,8 +101,8 @@
 </template>
 
 <script setup>
-import imageSmall from '@/assets/images/bright-hero-sm.webp'
-import imageLarge from '@/assets/images/bright-hero.webp'
+import imageSmall from '@/assets/images/bright-hero-412.webp'
+import imageLarge from '@/assets/images/bright-hero-768.webp'
 </script>
 
 <style scoped>
