@@ -69,23 +69,40 @@
             />
         </svg>
         <div
-            class="relative z-5 h-full w-full overflow-hidden"
+            class="
+                relative
+                z-5 
+                h-full 
+                w-full 
+                overflow-hidden
+                "
         >
-            <img
-                src="../../../assets/images/bright-hero.webp"
+        <picture
+            class="
+                h-full 
+                w-full 
+                block
+                "
+            style="clip-path: url(#hero-image-clip);"
+        >
+                <source media="(min-width: 768px)" :srcset="imageLarge" />
+                <img
+                :src="imageSmall"
                 alt="Modern smart lighting interior"
                 class="h-full w-full object-cover object-center"
-                style="clip-path: url(#hero-image-clip);"
                 loading="eager"
-                width="1024"
-                height="1024"
+                width="512"
+                height="512"
                 fetchpriority="high"
             />
+        </picture>
         </div>
     </div>
 </template>
 
 <script setup>
+import imageSmall from '@/assets/images/bright-hero-sm.webp'
+import imageLarge from '@/assets/images/bright-hero.webp'
 </script>
 
 <style scoped>
