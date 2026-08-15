@@ -64,9 +64,7 @@
                     flex
                     flex-col
                     items-center
-                    justify-between
-                    py-10
-                    md:py-20
+                    justify-evenly
                     lg:w-2/5
                 "
             >

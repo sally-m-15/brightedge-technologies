@@ -10,6 +10,6 @@ import HeroSection from '@/components/home/HeroSection.vue';
 
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 
 </style>

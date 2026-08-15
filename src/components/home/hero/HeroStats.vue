@@ -3,7 +3,6 @@
         class="
             relative
             z-10
-            mt-4
             flex
             w-full
             items-center

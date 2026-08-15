@@ -1,25 +1,25 @@
 @font-face {
-  font-family: "Swiss721";
-  src: url("../assets/fonts/Swiss 721 Light.woff2") format("woff2");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Swiss721";
+    src: url("../fonts/Swiss 721 Light.woff2") format("woff2");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-  font-family: "Swiss721";
-  src: url("../assets/fonts/Swiss 721 Medium.woff2") format("woff2");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Swiss721";
+    src: url("../fonts/Swiss 721 Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-  font-family: "Swiss721";
-  src: url("../assets/fonts/Swiss 721 Black Condensed.woff2") format("woff2");
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Swiss721";
+    src: url("../fonts/Swiss 721 Black Condensed.woff2") format("woff2");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {

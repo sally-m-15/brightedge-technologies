@@ -2,11 +2,10 @@
     <div
         class="
             flex
-            h-full
             w-full
             flex-col
             items-start
-            gap-8
+            gap-10
             ps-10
         "
     >
@@ -70,9 +69,9 @@
         <p
             class="
                 md:text-lg
-                tracking-widest
+                tracking-wider
                 text-text-secondary-light
-                md:w-110
+                md:w-120
                 text-xs
                 font-medium
                 pe-6
@@ -88,13 +87,14 @@
                 w-full
                 flex-col
                 gap-6
+                py-4
                 md:flex-row
                 lg:flex-col
                 xl:flex-row
             "
         >
             <a
-                href="https://wa.me/00966598100466"
+                href="https://wa.me/01229817421"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="block text-xs"
