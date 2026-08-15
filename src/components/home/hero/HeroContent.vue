@@ -94,7 +94,7 @@
             "
         >
             <a
-                href="https://wa.me/01229817421"
+                href="https://wa.me/201029817421"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="block text-xs"

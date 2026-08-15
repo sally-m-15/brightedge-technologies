@@ -38,7 +38,7 @@
         >
             <NavbarNavigation />
 <a
-  href="https://wa.me/01029817421"
+  href="https://wa.me/201029817421"
   target="_blank"
   rel="noopener noreferrer"
 >
