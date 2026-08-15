@@ -48,7 +48,7 @@
                 tracking-[2px]
                 text-text-light
                 md:text-[60px]
-                xl:text-8xl
+                xl:text-[80px]
             "
         >
             Light that

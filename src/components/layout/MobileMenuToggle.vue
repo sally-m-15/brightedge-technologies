@@ -10,16 +10,40 @@
         aria-label="Toggle navigation menu"
         @click="$emit('toggle')"
     >
-        <font-awesome-icon
-            :icon="isOpen ? faXmark : faBars"
-            class="text-xl"
-        />
+        <svg
+  v-if="!isOpen"
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linejoin="round"
+  aria-hidden="true"
+  class="size-6"
+>
+  <path d="M4 6h16" />
+  <path d="M4 12h16" />
+  <path d="M4 18h16" />
+</svg>
+
+<svg
+  v-else
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linejoin="round"
+  aria-hidden="true"
+  class="size-6"
+>
+  <path d="M6 6l12 12" />
+  <path d="M18 6L6 18" />
+</svg>
     </button>
 </template>
 
 <script setup>
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons'
 
 defineProps({
     isOpen: {
