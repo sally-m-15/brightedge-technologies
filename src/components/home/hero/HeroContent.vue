@@ -24,7 +24,7 @@
       BrightEdge designs and engineers precision architectural lighting and smart control systems
       that adapt to how people live, work, and gather.
     </p>
-    <div class="flex w-full flex-col gap-6 py-4 md:flex-row lg:flex-col xl:flex-row">
+    <div class="flex w-full flex-col items-start gap-6 py-4 md:flex-row lg:flex-col xl:flex-row">
       <a
         href="https://wa.me/201029817421"
         target="_blank"
