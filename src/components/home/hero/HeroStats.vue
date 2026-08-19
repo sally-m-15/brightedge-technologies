@@ -31,8 +31,8 @@
                     border-primary/30
                     bg-primary/10
                     p-2.5
-                    md:h-10
-                    md:w-10
+                    lg:h-10
+                    lg:w-10
                 "
             >
                 <svg

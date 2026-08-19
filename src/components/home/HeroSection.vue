@@ -2,7 +2,7 @@
     <section
         class="
             relative
-            min-h-screen
+           xl:min-h-screen
             w-full
             bg-black
         "
