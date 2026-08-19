@@ -1,34 +1,47 @@
+const hiddenClasses = ['opacity-0', 'translate-y-10'];
+const visibleClasses = ['opacity-100', 'translate-y-0'];
+
+let observer = null;
+
+ function getObserver () {
+    if( observer !== null ) {
+      return observer;
+    };
+    observer = new IntersectionObserver(handleIntersect,{
+      threshold: 0.15,
+    })
+    return observer; 
+ };
+
+ function handleIntersect ( entries ) {
+  entries.forEach(entry => {
+    const elementIsVisible = entry.isIntersecting;
+    if( !elementIsVisible ) return;
+      animateIn(entry.target);
+      getObserver().unobserve(entry.target);
+  });
+ };
+
+ function animateIn (element) {
+    element.classList.remove(...hiddenClasses );
+    element.classList.add(...visibleClasses);
+ };
+
 export const vObserve = {
-  mounted(el) {
-    el.classList.add(
-      'transition-all',
-      'duration-1000',
+  mounted(element) {
+    element.classList.add(
+      'transition-opacity',
+      'transition-transform',
+      'duration-700',
       'ease-out',
-      'opacity-0',
-      'translate-y-10'
+      ...hiddenClasses
     );
 
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (!entry.isIntersecting) return;
-
-        el.classList.remove('opacity-0', 'translate-y-10');
-        el.classList.add('opacity-100', 'translate-y-0');
-
-        observer.unobserve(el);
-      },
-      {
-        threshold: 0.15,
-      }
-    );
-
-    observer.observe(el);
-
-    el._observer = observer;
+    getObserver().observe(element);
   },
 
-  unmounted(el) {
-    el._observer?.disconnect();
+  unmounted(element) {
+    getObserver().unobserve(element);
   },
 };
 
