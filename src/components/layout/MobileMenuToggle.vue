@@ -7,7 +7,8 @@
             hover:text-text-light
             lg:hidden
         "
-        aria-label="Toggle navigation menu"
+        :aria-label="isOpen ? 'Close navigation menu' : 'Open navigation menu'"
+        :aria-expanded="isOpen"
         @click="$emit('toggle')"
     >
         <svg

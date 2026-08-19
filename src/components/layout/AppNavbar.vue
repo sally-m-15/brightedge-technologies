@@ -21,7 +21,6 @@
       hover:shadow-2xl
       shadow-primary
       py-3
-      px-4
     "
   >
     GET A CONSULTATION
@@ -41,6 +40,7 @@
   href="https://wa.me/201029817421"
   target="_blank"
   rel="noopener noreferrer"
+  aria-label="Get a consultation via WhatsApp (opens in a new tab)"
 >
   <BaseButton
     class="

@@ -63,6 +63,8 @@
                 class="
                     flex
                     flex-col
+                    pt-10
+                    lg:pt-0
                     items-center
                     justify-evenly
                     lg:w-2/5

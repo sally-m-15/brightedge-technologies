@@ -30,9 +30,10 @@
         target="_blank"
         rel="noopener noreferrer"
         class="inline-block"
+        aria-label="Get a consultation via WhatsApp (opens in a new tab)"
       >
         <BaseButton
-          class="rounded-xl bg-primary text-text-dark shadow-primary hover:bg-primary-hover hover:shadow-2xl"
+          class="rounded-xl bg-primary text-text-dark py-3 whitespace-nowrap shadow-primary hover:bg-primary-hover hover:shadow-2xl"
         >
           GET A CONSULTATION
         </BaseButton>
@@ -40,7 +41,7 @@
       <RouterLink :to="{ name: 'products' }" class="inline-block">
         <BaseButton
           iconClass="text-text-light"
-          class="rounded-xl border! border-border-light! bg-bg-dark px-9! text-text-light hover:border-primary! hover:text-primary-hover"
+          class="rounded-xl border! border-border-light! py-3 whitespace-nowrap bg-bg-dark px-10! text-text-light hover:border-primary! hover:text-primary-hover"
         >
           VIEW PROJECTS
         </BaseButton>

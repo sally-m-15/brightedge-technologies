@@ -27,6 +27,7 @@
                     stroke-width="2"
                     stroke-linecap="round"
                     stroke-linejoin="round"
+                    aria-hidden="true"
                 >
                     <template
                         v-for="(shape, index) in feature.icon"

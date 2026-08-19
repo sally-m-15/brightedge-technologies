@@ -1,5 +1,5 @@
 <template>
-    <div class="relative h-full w-full">
+    <div class="relative h-full w-full ">
         <svg
             class="absolute h-0 w-0"
             aria-hidden="true"
@@ -26,7 +26,6 @@
         </svg>
         <svg
             class="pointer-events-none absolute inset-0 z-0 h-full w-full"
-            style="filter: drop-shadow(0px 0px 10px #F5a623);"
             viewBox="0 0 1000 1000"
             preserveAspectRatio="none"
         >
@@ -35,7 +34,7 @@
                     M 270 0
                     L 1000 0
                     L 1000 1000
-                    L 0 1000
+                    L 80 1000
                     L 780 1600
                     L 110 1000
                     L 160 400
@@ -47,7 +46,7 @@
             />
         </svg>
         <svg
-            class="pointer-events-none absolute inset-0 z-10 h-full w-full"
+            class="pointer-events-none absolute inset-0 z-10 h-full w-full "
             viewBox="0 0 1000 1000"
             preserveAspectRatio="none"
         >
@@ -57,9 +56,9 @@
                     L 270 0
                     Q 230 5 210 80
                     L 160 400
-                    L 110 750
-                    L 0 1510
-                    L 780 1002
+                    L 110 740
+                    L 0 1500
+                    L 0 1002
                 "
                 fill="none"
                 class="stroke-[#F5a623]"
@@ -82,6 +81,7 @@
                 h-full 
                 w-full 
                 block
+                
                 "
             style="clip-path: url(#hero-image-clip);"
         >

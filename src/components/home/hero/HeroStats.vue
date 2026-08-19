@@ -18,7 +18,6 @@
             :key="stat.title"
             class="flex items-start gap-3"
         >
-            <!-- Icon -->
             <div
                 class="
                     flex
@@ -47,6 +46,7 @@
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     class="h-5 w-5"
+                    aria-hidden="true"
                 >
                     <template
                         v-for="(shape, index) in stat.icon"
