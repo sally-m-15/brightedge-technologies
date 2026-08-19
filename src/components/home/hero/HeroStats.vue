@@ -64,7 +64,7 @@
                 </svg>
             </div>
             <div>
-                <h4
+                <h3
                     class="
                         text-base
                         font-black
@@ -74,7 +74,7 @@
                     "
                 >
                     {{ stat.title }}
-                </h4>
+                </h3>
                 <p
                     class="
                         mt-1

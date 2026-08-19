@@ -48,9 +48,9 @@
                 </svg>
             </div>
             <div>
-                <h4 class="text-sm font-semibold text-white">
+                <h2 class="text-sm font-semibold text-white">
                     {{ feature.title }}
-                </h4>
+                </h2>
                 <p class="mt-0.5 text-xs text-gray-400">
                     {{ feature.description }}
                 </p>
