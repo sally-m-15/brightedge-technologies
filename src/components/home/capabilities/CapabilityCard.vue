@@ -6,8 +6,9 @@
       class="relative flex group overflow-hidden rounded-lg"
       :class="capability.gridClass"
     >
-<picture>
+     <picture class="block h-full w-full">
   <source
+    v-if="capability.image.mobile"
     media="(max-width: 767px)"
     :srcset="capability.image.mobile"
   />
@@ -18,7 +19,7 @@
     :alt="capability.title"
     :width="capability.width"
     :height="capability.height"
-    class="h-full w-full object-cover max-h-75 transition-transform duration-1000 ease-out group-hover:scale-105"
+    class="block h-full w-full max-h-75 object-cover transition-transform duration-1000 ease-out group-hover:scale-105"
     loading="lazy"
   />
 </picture>

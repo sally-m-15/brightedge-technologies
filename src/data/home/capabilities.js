@@ -148,7 +148,9 @@ export const capabilities = [
     title: 'Hospitality',
     description:
       'Layered, welcoming ambiance engineered for lobbies, suites, and dining.',
-    image: hospitalityImage,
+    image: {
+  desktop: hospitalityImage,
+},
     width: 735,
     height: 490,
     featured: false,
@@ -193,7 +195,9 @@ export const capabilities = [
     title: 'Workspaces',
     description:
       'Human-centric lighting that boosts focus, comfort, and wellbeing all day long.',
-    image: workspacesImage,
+    image: {
+  desktop: workspacesImage,
+},
     width: 735,
     height: 412,
     featured: false,
