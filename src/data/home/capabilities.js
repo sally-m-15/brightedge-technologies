@@ -1,16 +1,24 @@
+import architecturalImageMobile from '../../assets/images/architectural-lighting-600.webp'
 import architecturalImage from '../../assets/images/architectural-lighting.webp'
 import smartControlsImage from '../../assets/images/smart-controls.webp'
+import smartControlsImageMobile from '../../assets/images/smart-controls-332.webp'
 import hospitalityImage from '../../assets/images/hospitality.webp'
 import workspacesImage from '../../assets/images/workspaces.webp'
+
 
 export const capabilities = [
   {
     title: 'Architectural Lighting',
     description:
       'Precision fixtures that shape the geometry of a space, revealing textures, depth, and form.',
-    image: architecturalImage,
+    image: {
+  mobile: architecturalImageMobile,
+  desktop: architecturalImage,
+    },
     width: 736,
     height: 414,
+      mobileWidth: 600,
+  mobileHeight: 338,
     featured: true,
     gridClass: 'lg:col-span-2',
     icon: [
@@ -83,9 +91,14 @@ export const capabilities = [
   {
     title: 'Smart Controls',
     description: 'Intuitive scenes, daylight harvesting, and voice-ready automation from a single panel.',
-    image: smartControlsImage,
+      image: {
+    mobile: smartControlsImageMobile,
+    desktop: smartControlsImage,
+  },
     width: 1024,
-    geight: 1024,
+    height: 1024,
+      mobileWidth: 332,
+  mobileHeight: 332,
     featured: false,
     gridClass: 'lg:col-span-1',
     icon: [

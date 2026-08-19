@@ -6,15 +6,22 @@
       class="relative flex group overflow-hidden rounded-lg"
       :class="capability.gridClass"
     >
-      <img
-      v-observe
-        :src="capability.image"
-        :alt="capability.title"
-        :width="capability.width"
-        :height="capability.height"
-        class="h-full w-full object-cover max-h-75 transition-transform duration-1000 ease-out group-hover:scale-105"
-        loading="lazy"
-      />
+<picture>
+  <source
+    media="(max-width: 767px)"
+    :srcset="capability.image.mobile"
+  />
+
+  <img
+    v-observe
+    :src="capability.image.desktop"
+    :alt="capability.title"
+    :width="capability.width"
+    :height="capability.height"
+    class="h-full w-full object-cover max-h-75 transition-transform duration-1000 ease-out group-hover:scale-105"
+    loading="lazy"
+  />
+</picture>
 
       <div
         class="absolute inset-0 bg-linear-to-r from-black/80 py-4 px-6 flex flex-col justify-between via-black/40 to-transparent"
