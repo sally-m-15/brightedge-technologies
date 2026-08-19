@@ -29,11 +29,11 @@
       >
           <CapabilityIcon :icon="capability.icon" />
         <div class=" flex flex-col">
-          <h4 v-observe class="lg:text-3xl text-lg tracking-[1px] relative max-w-32 font-bold text-text-light
+          <h3 v-observe class="lg:text-3xl text-lg tracking-[1px] relative max-w-32 font-bold text-text-light
           after:absolute  after:h-0.5 after:w-14 after:bg-primary after:bottom-0 pb-2 after:left-0
           ">
             {{ capability.title }}
-          </h4>
+          </h3>
           <div v-observe 
           :class="capability.featured ? 'flex flex-col' : 'flex flex-col lg:flex-row  lg:justify-between lg:items-center'">
           <p class="mt-2 max-w-56 text-sm font-light  text-text-light">
