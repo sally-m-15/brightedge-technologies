@@ -10,6 +10,10 @@
         :src="bgImage"
         alt=""
         class="w-full h-full object-cover"
+        fetchpriority="high"
+        loading="eager"
+        width="1920"
+        height="1080"
       />
     </picture>
 
