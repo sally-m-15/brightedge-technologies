@@ -2,18 +2,18 @@
   <div class="relative w-full min-h-[85vh] text-white overflow-hidden">
     <picture class="absolute inset-0">
       <source
-        media="(max-width: 767px)"
-        :srcset="bgImageMobile"
+        media="(min-width: 767px)"
+        :srcset="bgImage"
       />
 
       <img
-        :src="bgImage"
+        :src="bgImageMobile"
         alt=""
         class="w-full h-full object-cover"
         fetchpriority="high"
         loading="eager"
-        width="1920"
-        height="1080"
+        width="525"
+        height="700"
       />
     </picture>
 
