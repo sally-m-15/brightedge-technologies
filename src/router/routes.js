@@ -9,6 +9,11 @@ export const routes = [
                 component: () => import("@/views/HomeView.vue")
             },
             {
+                path: 'capabilities',
+                name: 'capabilities',
+                component: () => import("@/views/CapabilitiesView.vue")
+            },
+            {
                 path: 'about',
                 name: 'about',
                 component: () => import("@/views/AboutView.vue")

@@ -1,5 +1,5 @@
 <template>
-    <section v-observe class="text-text-light lg:py-20 py-24 px-10 container mx-auto">
+    <section v-observe class="text-text-light lg:py-20 py-24 px-10">
         <div class="lg:flex justify-between items-center pb-4">
             <SectionHeader 
             eyebrow="CAPABILITIES"

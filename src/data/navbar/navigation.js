@@ -1,7 +1,12 @@
+
 export const navigationLinks = [
   { 
     name: 'Home',
     path: '/' 
+  },
+  {
+    name: 'capabilities',
+    path: '/capabilities'
   },
   { 
     name: 'About',
