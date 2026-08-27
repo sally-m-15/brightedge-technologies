@@ -1,7 +1,8 @@
 <template>
     <section v-observe class="text-text-light lg:py-20 py-24 px-10">
         <div class="lg:flex justify-between items-center pb-4">
-            <SectionHeader 
+            <SectionHeader
+            tag="h2"
             eyebrow="CAPABILITIES"
             title="A modular system"
             subtitle="for every"

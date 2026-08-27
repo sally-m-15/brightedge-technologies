@@ -24,13 +24,6 @@
 <script setup>
 import BaseIcon from './BaseIcon.vue';
 
-
-defineProps({
-  iconClass: {
-    type: String,
-    default: 'text-text-dark',
-  },
-})
 </script>
 
 <style lang="scss" scoped></style>

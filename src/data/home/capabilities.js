@@ -2,8 +2,8 @@ import architecturalImageMobile from '../../assets/images/architectural-lighting
 import architecturalImage from '../../assets/images/architectural-lighting.webp'
 import smartControlsImage from '../../assets/images/smart-controls.webp'
 import smartControlsImageMobile from '../../assets/images/smart-controls-332.webp'
-import hospitalityImage from '../../assets/images/hospitality.webp'
-import workspacesImage from '../../assets/images/workspaces.webp'
+import cusyomSolutionsImage from '../../assets/images/CUSTOM SOLUTIONS.webp'
+import lightimgSystemsImage from '../../assets/images/LIGHTING SYSTEMS.webp'
 
 
 export const capabilities = [
@@ -145,11 +145,11 @@ export const capabilities = [
   },
 
   {
-    title: 'Hospitality',
+    title: 'Custom Solutions',
     description:
-      'Layered, welcoming ambiance engineered for lobbies, suites, and dining.',
+      'We collaborate with designers to deliver tailored lighting from concept to execution.',
     image: {
-  desktop: hospitalityImage,
+  desktop: cusyomSolutionsImage,
 },
     width: 735,
     height: 490,
@@ -192,11 +192,10 @@ export const capabilities = [
   },
 
   {
-    title: 'Workspaces',
-    description:
-      'Human-centric lighting that boosts focus, comfort, and wellbeing all day long.',
+    title: 'Lighting Systems',
+    description:'High-quality components, perfectly integrated for consistent performance.',
     image: {
-  desktop: workspacesImage,
+  desktop: lightimgSystemsImage,
 },
     width: 735,
     height: 412,

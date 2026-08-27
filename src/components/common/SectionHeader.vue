@@ -1,27 +1,27 @@
 <template>
   <div class="flex flex-col gap-y-5">
     <span
-    v-observe
+      v-observe="shouldObserve"
       v-if="eyebrow"
       class="relative lg:text-xl font-medium tracking-[3px] text-primary text-md 
-        after:absolute  after:left-35 lg:after:left-40 after:top-1/2 after:h-0.5 after:w-14 after:bg-primary"
+        after:absolute after:left-35 lg:after:left-40 after:top-1/2 after:h-0.5 after:w-14 after:bg-primary"
     >
       {{ eyebrow }}
     </span>
 
-    <h2 class="lg:text-5xl text-2xl font-black" v-observe>
+    <component :is="tag" class="lg:text-5xl text-2xl font-black" v-observe="shouldObserve">
       {{ title }}
 
-      <span class="block" v-observe>
+      <span class="block" v-observe="shouldObserve">
         {{ subtitle }}
 
-        <span class="text-primary" v-observe>
+        <span class="text-primary" v-observe="shouldObserve">
           {{ accent }}
         </span>
       </span>
-    </h2>
+    </component>
 
-    <p v-if="description" class="lg:w-80 w-full text-text-light tracking-[1px] font-light pb-3" v-observe>
+    <p v-if="description" class="lg:w-80 w-full text-text-light tracking-[1px] font-light pb-3" v-observe="shouldObserve">
       {{ description }}
     </p>
   </div>
@@ -29,8 +29,11 @@
 
 <script setup>
 import { vObserve } from '@/directives/vObserve.js';
+import { computed } from 'vue';
 
-defineProps({
+const  shouldObserve = computed(() => props.tag !== 'h1');
+
+const props = defineProps({
   eyebrow: {
     type: String,
     default: '',
@@ -54,6 +57,11 @@ defineProps({
   description: {
     type: String,
     default: '',
+  },
+
+  tag: {
+    type: String,
+    default: 'h2',
   },
 })
 </script>

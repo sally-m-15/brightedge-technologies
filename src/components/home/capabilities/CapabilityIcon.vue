@@ -25,7 +25,7 @@
               :width="item.width"
               :height="item.height"
               fill="none"
-              stroke="#f59e0b"
+              stroke="var(--color-primary)"
               stroke-width="2"
               stroke-linejoin="round"
             />
@@ -35,7 +35,7 @@
               :y1="item.y1"
               :x2="item.x2"
               :y2="item.y2"
-              stroke="#f59e0b"
+              stroke="var(--color-primary)"
               stroke-width="2"
               stroke-linecap="round"
             />
@@ -44,13 +44,13 @@
               :cx="item.cx"
               :cy="item.cy"
               :r="item.r ?? 0.9"
-              fill="#f59e0b"
+              fill="var(--color-primary)"
             />
             <path
               v-else-if="item.type === 'path'"
               :d="item.d"
               fill="none"
-              stroke="#f59e0b"
+              stroke="var(--color-primary)"
               stroke-width="1.8"
               stroke-linecap="round"
               stroke-linejoin="round"
@@ -59,7 +59,7 @@
               v-else-if="item.type === 'polygon'"
               :points="item.points"
               fill="none"
-              stroke="#f59e0b"
+              stroke="var(--color-primary)"
               stroke-width="2"
               stroke-linejoin="round"
             />

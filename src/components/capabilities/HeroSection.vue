@@ -18,16 +18,16 @@
     </picture>
 
     <div
-      class="absolute inset-0 bg-linear-to-r from-black px-10 flex items-center via-black/50 to-transparent py-10"
+      class="absolute inset-0 bg-linear-to-r from-black px-10 flex items-center via-black/70 to-transparent py-10"
     >
       <SectionHeader
-        eyebrow="CAPABILITIES"
-        title="A modular system"
-        subtitle="for every"
-        accent="environment."
-        description="Scalable lighting and control solutions engineered to adapt to the way people live, work, and gather."
+        accent="OUR CAPABILITIES"
+        description="Discover our comprehensive suite of architectural lighting and smart control solutions."
+        tag="h1"
       />
+      
     </div>
+    
   </div>
 </template>
 

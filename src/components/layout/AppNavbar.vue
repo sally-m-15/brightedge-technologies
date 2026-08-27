@@ -51,6 +51,7 @@
       hover:shadow-2xl
       shadow-primary
       mt-8
+      py-3
       "
   >
     GET A CONSULTATION
