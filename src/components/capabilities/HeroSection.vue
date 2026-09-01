@@ -4,6 +4,8 @@
       <source
         media="(min-width: 767px)"
         :srcset="bgImage"
+        width="1000"
+        height="562"
       />
 
       <img
