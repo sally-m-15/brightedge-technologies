@@ -69,7 +69,7 @@
             </div>
           </div>
 
-            <div class="mb-8 px-6">
+            <div v-observe class="mb-8 px-6" >
           <a v-observe href="#">
             <BaseButton class="text-primary font-medium! border! border-primary! py-2 rounded-xl hover:bg-primary hover:text-text-light">
               EXPLORE ARCHITECTURAL LIGHTING
