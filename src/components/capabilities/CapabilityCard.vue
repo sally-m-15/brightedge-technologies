@@ -3,13 +3,13 @@
     <div 
       v-for="capability in capabilitiesData"
       :key="capability.title"
-      class="shadow-2xl lg:grid lg:grid-rows-[auto_1fr_auto] shadow-border-dark/90 border border-border-dark gap-6 lg:h-[500px] rounded-xl overflow-hidden"
-      :class="capability.imagePosition === 'left' ? 'lg:grid-cols-[35%_65%] pe-10' : 'lg:grid-cols-[65%_35%]'"
+      class="shadow-2xl lg:grid lg:grid-rows-[auto_1fr_auto] shadow-border-dark/90 border border-border-dark gap-0 lg:h-[450px] rounded-xl overflow-hidden"
+      :class="capability.imagePosition === 'left' ? 'lg:grid-cols-[35%_65%] lg:pe-10' : 'lg:grid-cols-[65%_35%]'"
     >
 
     <div
   :class="[
-    'flex flex-col gap-4 p-4 lg:py-4 lg:pb-0',
+    'flex flex-col gap-4 p-6 lg:py-4 lg:pb-0',
     capability.imagePosition === 'right'
       ? 'lg:col-start-1 ps-8'
       : 'lg:col-start-2'
@@ -30,6 +30,7 @@
         {{ capability.descrription }}
       </p>
     </div>
+
   <div
   :class="[
     'w-full shadow-2xl shadow-primary/50 h-full lg:row-span-3 lg:row-start-1',
@@ -54,13 +55,13 @@
 </picture>
       </div>
 
-          <div class="flex flex-wrap lg:flex-nowrap  p-4  w-full justify-between items-center gap-y-8 lg:pt-0 lg:pb-0">
+          <div class="flex ps-6 flex-wrap lg:flex-nowrap gap-y-4 py-4 lg:py-0 lg:gap-y-0  justify-between items-center ">
             <div 
               v-for="feature in capability.features"
               :key="feature.title"
-              class="border-r-2 border-border-dark  last:border-r-0 p-2 md:pe-3 lg:pe-8 xl:pe-4"
+              class="border-r-2 border-border-dark  last:border-r-0 p-1  md:pe-3 lg:pe-8 xl:pe-4"
             >
-              <div class="flex flex-col gap-2 ">
+              <div class="flex flex-col gap-2">
                 <CapabilityIcon :icon="feature.icon" />
                 <h4 v-observe class="text-sm font-medium text-text-light w-32 md:w-full md:text-xl">{{ feature.title }}</h4>
                 <p v-observe class="text-[11px] text-text-secondary-light w-28 lg:w-32">{{ feature.description }}</p>
@@ -68,7 +69,7 @@
             </div>
           </div>
 
-            <div class="p-4 lg:pt-0 lg:ps-8">
+            <div class="mb-8 px-6">
           <a v-observe href="#">
             <BaseButton class="text-primary font-medium! border! border-primary! py-2 rounded-xl hover:bg-primary hover:text-text-light">
               EXPLORE ARCHITECTURAL LIGHTING
