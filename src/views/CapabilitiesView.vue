@@ -1,6 +1,6 @@
 <template>
-    <div>
-            <HeroSection />
+    <div class="pb-10">
+    <HeroSection />
     <CapabilityCard />
     </div>
 

@@ -26,4 +26,4 @@ import BaseIcon from './BaseIcon.vue';
 
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped></style>

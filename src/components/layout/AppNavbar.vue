@@ -1,6 +1,6 @@
 <template>
     <header
-        class="fixed z-50 w-full px-6 flex items-center justify-between bg-bg-dark/90 md:px-16 py-3"
+        class="fixed z-50 w-full px-6 flex items-center justify-between bg-bg-dark/90 md:px-16 lg:px-6 xl:px-16 py-3"
     >
         <BrandLogo />
         <div class="hidden lg:block">

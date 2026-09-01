@@ -28,7 +28,9 @@ let observer = null;
  };
 
 export const vObserve = {
-  mounted(element) {
+  mounted(element, binding) {
+    if (binding.value === false) return;
+    
     element.classList.add(
       'transition-opacity',
       'transition-transform',

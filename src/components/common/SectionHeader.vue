@@ -31,7 +31,6 @@
 import { vObserve } from '@/directives/vObserve.js';
 import { computed } from 'vue';
 
-const  shouldObserve = computed(() => props.tag !== 'h1');
 
 const props = defineProps({
   eyebrow: {
@@ -63,5 +62,8 @@ const props = defineProps({
     type: String,
     default: 'h2',
   },
-})
+});
+
+const  shouldObserve = computed(() => props.tag !== 'h1');
+
 </script>

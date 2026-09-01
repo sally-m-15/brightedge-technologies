@@ -1,3 +1,13 @@
+import architecturalLightingDesktop from '../../assets/images/Architectural-Lighting-desktop.webp';
+import architecturalLightingMobile from '../../assets/images/architectural-mobile.webp';
+import smartControlsDesktop from '../../assets/images/SMART-CONTROLS-desktop.webp';
+import smartControlsMobile from '../../assets/images/smart-control-mobile.webp';
+import customSolutionsDesktop from '../../assets/images/customSolutions-desktop.webp';
+import customSolutionsMobile from '../../assets/images/custom-mobile.webp';
+import lightingSystemsDesktop from '../../assets/images/lighting-Systems-desktop.webp'
+import lightingSystemsMobile from '../../assets/images/LIGHTING-SYSTEMS-mobile.webp'
+
+
 export const capabilitiesData = [
     {
         id:1,
@@ -6,8 +16,8 @@ export const capabilitiesData = [
         subtitle: 'Light that becomes part of the architecture.',
         descrription: 'Precision fixtures that shape the geometry of a space, reveal material texture, depth, and form.',
         image: {
-            mobile: '',
-            desktop: '',
+            mobile: architecturalLightingMobile,
+            desktop: architecturalLightingDesktop,
         },
         imagePosition: 'left',
         ButtonText: 'EXPLORE ARCHITECTURAL LIGHTING',
@@ -174,8 +184,8 @@ export const capabilitiesData = [
         subtitle: 'Intelligent control without unnecessary complexity.',
         descrription: 'Create the right atmosphere, improve efficiency, and adapt lighting to every moment.',
         image: {
-            mobile: '',
-            desktop: '',
+            mobile: smartControlsMobile,
+            desktop: smartControlsDesktop,
         },
         imagePosition: 'right',
         ButtonText: 'EXPLORE SMART CONTROLS',
@@ -323,8 +333,8 @@ export const capabilitiesData = [
         subtitle: 'Designed around the demands of your project.',
         descrription: 'From concept to execution, we collaborate with architects, designers, and developers to deliver unique lighting solutions.',
         image: {
-            mobile: '',
-            desktop: '',
+            mobile: customSolutionsMobile,
+            desktop: customSolutionsDesktop,
         },
             imagePosition: 'left',
             ButtonText: 'EXPLORE CUSTOM SOLUTIONS',
@@ -431,8 +441,8 @@ export const capabilitiesData = [
         subtitle: 'Complete systems that work seamlessly together.',
         descrription: ' High-quality components, perfectly integrated for consistent performance.',
         image: {
-            mobile: '',
-            desktop: '',
+            mobile: lightingSystemsMobile,
+            desktop: lightingSystemsDesktop,
         },
             imagePosition: 'right',
             ButtonText: 'EXPLORE LIGHTING SYSTEMS',
