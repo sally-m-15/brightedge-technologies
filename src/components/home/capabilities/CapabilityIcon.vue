@@ -14,7 +14,7 @@
             rx="10"
             ry="10"
             fill="#181a20"
-            stroke="#2a2d36"
+            stroke="var(--color-border-dark)"
             stroke-width="1"
           />
           <template v-for="(item, iconIndex) in icon" :key="iconIndex">

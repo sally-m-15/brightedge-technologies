@@ -16,7 +16,7 @@
   ]"
 >
       <span v-observe class="text-primary font-medium text-lg">
-        {{ capability.number}}
+        {{ capability.number }}
       </span>
       <h2 v-observe class="font-medium text-text-light tracking-[2px] uppercase text-lg">
         {{
@@ -27,7 +27,7 @@
         {{ capability.subtitle }}
       </h3>
       <p v-observe class="text-text-secondary-light text-xs w-60">
-        {{ capability.descrription }}
+        {{ capability.description }}
       </p>
     </div>
 
