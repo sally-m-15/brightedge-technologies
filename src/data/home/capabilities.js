@@ -2,8 +2,10 @@ import architecturalImageMobile from '../../assets/images/architectural-lighting
 import architecturalImage from '../../assets/images/architectural-lighting.webp'
 import smartControlsImage from '../../assets/images/smart-controls.webp'
 import smartControlsImageMobile from '../../assets/images/smart-controls-332.webp'
-import cusyomSolutionsImage from '../../assets/images/CUSTOM SOLUTIONS.webp'
-import lightimgSystemsImage from '../../assets/images/LIGHTING SYSTEMS.webp'
+import cusyomSolutionsImage from '../../assets/images/CUSTOMSOLUTIONS.webp'
+import cusyomSolutionsImageMobile from '../../assets/images/CUSTOMSOLUTIONSMobile.webp'
+import lightimgSystemsImage from '../../assets/images/LIGHTINGSYSTEMS.webp'
+import lightimgSystemsImageMobile from '../../assets/images/LIGHTINGSYSTEMSMobile.webp'
 
 
 export const capabilities = [
@@ -15,10 +17,10 @@ export const capabilities = [
   mobile: architecturalImageMobile,
   desktop: architecturalImage,
     },
-    width: 736,
-    height: 414,
-      mobileWidth: 600,
-  mobileHeight: 338,
+    width: 515,
+    height: 343,
+      mobileWidth:390,
+  mobileHeight: 260,
     featured: true,
     gridClass: 'lg:col-span-2',
     icon: [
@@ -150,9 +152,12 @@ export const capabilities = [
       'We collaborate with designers to deliver tailored lighting from concept to execution.',
     image: {
   desktop: cusyomSolutionsImage,
+  mobile: cusyomSolutionsImageMobile,
 },
-    width: 735,
-    height: 490,
+    width: 515,
+    height: 343,
+    mobileWidth:390,
+    mobileHeight: 260,
     featured: false,
     gridClass: 'lg:col-span-1',
     icon: [
@@ -196,9 +201,12 @@ export const capabilities = [
     description:'High-quality components, perfectly integrated for consistent performance.',
     image: {
   desktop: lightimgSystemsImage,
+  mobile: lightimgSystemsImageMobile,
 },
-    width: 735,
-    height: 412,
+    width: 535,
+    height: 300,
+      mobileWidth:390,
+  mobileHeight: 220,
     featured: false,
     gridClass: 'lg:col-span-2',
     icon: [
