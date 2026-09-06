@@ -1,13 +1,13 @@
-import hospitalityDesktop from '../../assets/images/hospitality.png'
-//import hospitalityMobile from '../../assets/images/hospitality-mobile.png'
-import workspacesDesktop from '../../assets/images/workspaces.webp'
-//import workspacesMobile from '../../assets/images/workspaces-mobile.webp'
-import retailDesktop from '../../assets/images/تنزيل (5).jfif'
-//import retailMobile from '../../assets/images/retail-mobile.webp'
-import residentialDesktop from '../../assets/images/تنزيل (6).jfif'
-//import residentialMobile from '../../assets/images/residential-mobile.webp'
-import commercialDesktop from '../../assets/images/hero-facade.png'
-//import commercialMobile from ''
+import hospitalityDesktop from '../../assets/images/hospitalityDesktop.webp'
+import hospitalityMobile from '../../assets/images/hospitalityMobile.webp'
+import workspacesDesktop from '../../assets/images/workspacesDesktop.webp'
+import workspacesMobile from '../../assets/images/workspacesMobile.webp'
+import retailDesktop from '../../assets/images/retailDesktop.webp'
+import retailMobile from '../../assets/images/retailMobile.webp'
+import residentialDesktop from '../../assets/images/residentialDesktop.webp'
+import residentialMobile from '../../assets/images/residentialMobile.webp'
+import commercialDesktop from '../../assets/images/commercialDesktop.webp'
+import commercialMobile from '../../assets/images/commercialMobile.webp'
 
 export const applications = [
     {
@@ -39,9 +39,13 @@ export const applications = [
         title: 'hospitality',
         description: 'Hotels, restaurants, lounges and resorts.',
         image: {
-            mobile: hospitalityDesktop,
+            mobile: hospitalityMobile,
             desktop: hospitalityDesktop,
         },
+        width: 1024,
+        height: 1024,
+        mobileWidth: 768,
+        mobileHeight: 768,
     },
 
     {
@@ -76,9 +80,13 @@ export const applications = [
         title: 'workspaces',
         description: 'Offices, meeting rooms and collaborative areas.',
         image: {
-            mobile: workspacesDesktop,
+            mobile: workspacesMobile,
             desktop: workspacesDesktop,
-        }
+        },
+        width: 768,
+        height: 512,
+        mobileWidth: 640,
+        mobileHeight: 427,
     },
 
     {
@@ -96,9 +104,13 @@ export const applications = [
         title: 'retail',
         description: 'stores, boutiques and flagship experiences.',
         image: {
-            mobile: retailDesktop,
+            mobile: retailMobile,
             desktop: retailDesktop,
-        }
+        },
+        width: 768,
+        height: 512,
+        mobileWidth: 640,
+        mobileHeight: 427,
     },
 
     {
@@ -116,9 +128,13 @@ export const applications = [
         title: 'residential',
         description: 'villas, apartments and private spaces.',
         image: {
-            mobile: residentialDesktop,
+            mobile: residentialMobile,
             desktop: residentialDesktop,
-        }
+        },
+        width: 768,
+        height: 616,
+        mobileWidth: 640,
+        mobileHeight: 512,
     },
 
     {
@@ -226,9 +242,13 @@ export const applications = [
         title: 'public & commercial',
         description: 'civic buildings, cultural spaces and more.',
         image: {
-            mobile: commercialDesktop,
+            mobile: commercialMobile,
             desktop: commercialDesktop,
-        }
+        },
+        width: 768,
+        height: 512,
+        mobileWidth: 640,
+        mobileHeight: 427,
     }
 
 ]
