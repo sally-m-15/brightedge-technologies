@@ -2,11 +2,24 @@
     <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
     <div v-observe v-for="application in applications" :key="application.id" class="rounded-2xl group pb-4 border border-border-dark">
     <div  class="relative w-full h-60 overflow-hidden">
-      <img 
-        :src="application.image.desktop" 
-        :alt="application.title"
-        class="w-full h-full rounded-t-2xl object-cover transition-transform duration-1000 ease-out group-hover:scale-105"
-      />
+
+           <picture class="block h-full w-full">
+        <source
+          v-if="capability.image.mobile"
+          media="(max-width: 767px)"
+          :srcset="capability.image.mobile"
+        />
+      
+        <img
+          v-observe
+          :src="capability.image.desktop"
+          :alt="capability.title"
+          :width="capability.width"
+          :height="capability.height"
+          class="block h-full w-full max-h-75 object-cover transition-transform duration-1000 ease-out group-hover:scale-105"
+          loading="lazy"
+        />
+      </picture>
     </div>
     <div class="px-6 flex flex-col gap-3">
         <div v-observe  class="-mt-9 z-10">
