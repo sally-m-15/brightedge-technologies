@@ -1,7 +1,7 @@
 <template>
     <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
-    <div v-observe v-for="application in applications" :key="application.id" class="rounded-2xl pb-4 border border-border-dark overflow-hidden">
-    <div  class="relative w-full h-60 group overflow-hidden">
+    <div v-observe v-for="application in applications" :key="application.id" class="rounded-2xl group pb-4 border border-border-dark">
+    <div  class="relative w-full h-60 overflow-hidden">
       <img 
         src="../../../assets/images/architectural-mobile.webp" 
         alt="Application Image" 
@@ -12,9 +12,9 @@
         <div v-observe  class="-mt-9 z-10">
           <ApplicationIcon :icon="application.icon" />
       </div>
-      <h3 v-observe  class="text-text-light font-bold w-full"> {{ application.title }} </h3>
+      <h3 v-observe  class="text-text-light font-black tracking-[1px] w-full"> {{ application.title }} </h3>
       <p v-observe  class="text-text-secondary-light text-sm md:w-44"> {{ application.description }} </p>
-      <BaseButton v-observe  class="text-xs! text-primary px-0! font-light!  hover:underline">Explore</BaseButton>
+      <BaseButton v-observe  class="!text-xs text-primary !px-0 !font-mideum  hover:underline">Explore</BaseButton>
     </div>
 
   </div>
