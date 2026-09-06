@@ -25,8 +25,13 @@ export default defineConfig(({ mode }) => ({
     build: {
         rollupOptions: {
             output: {
-                manualChunks: {
-                    'vue-vendor': ['vue', 'vue-router'],
+                manualChunks(id) {
+                    if (id.includes('node_modules/vue-router')) {
+                        return 'vue-vendor'
+                    }
+                    if (id.includes('node_modules/vue')) {
+                        return 'vue-vendor'
+                    }
                 },
             },
         },
