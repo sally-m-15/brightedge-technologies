@@ -3,20 +3,19 @@
     <div v-observe v-for="application in applications" :key="application.id" class="rounded-2xl group pb-4 border border-border-dark">
     <div  class="relative w-full h-60 overflow-hidden">
       <img 
-        src="../../../assets/images/architectural-mobile.webp" 
-        alt="Application Image" 
-        class="w-full h-full object-cover transition-transform duration-1000 ease-out group-hover:scale-105"
+        :src="application.image.desktop" 
+        :alt="application.title"
+        class="w-full h-full rounded-t-2xl object-cover transition-transform duration-1000 ease-out group-hover:scale-105"
       />
     </div>
     <div class="px-6 flex flex-col gap-3">
         <div v-observe  class="-mt-9 z-10">
           <ApplicationIcon :icon="application.icon" />
       </div>
-      <h3 v-observe  class="text-text-light font-black tracking-[1px] w-full"> {{ application.title }} </h3>
+      <h3 v-observe  class="text-text-light font-black tracking-[1.2px] w-full capitalize"> {{ application.title }} </h3>
       <p v-observe  class="text-text-secondary-light text-sm md:w-44"> {{ application.description }} </p>
       <BaseButton v-observe  class="!text-xs text-primary !px-0 !font-mideum  hover:underline">Explore</BaseButton>
     </div>
-
   </div>
     </div>
 </template>

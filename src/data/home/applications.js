@@ -1,3 +1,14 @@
+import hospitalityDesktop from '../../assets/images/hospitality.png'
+//import hospitalityMobile from '../../assets/images/hospitality-mobile.png'
+import workspacesDesktop from '../../assets/images/workspaces.webp'
+//import workspacesMobile from '../../assets/images/workspaces-mobile.webp'
+import retailDesktop from '../../assets/images/تنزيل (5).jfif'
+//import retailMobile from '../../assets/images/retail-mobile.webp'
+import residentialDesktop from '../../assets/images/تنزيل (6).jfif'
+//import residentialMobile from '../../assets/images/residential-mobile.webp'
+import commercialDesktop from '../../assets/images/hero-facade.png'
+//import commercialMobile from ''
+
 export const applications = [
     {
         id: 1,
@@ -28,8 +39,8 @@ export const applications = [
         title: 'hospitality',
         description: 'Hotels, restaurants, lounges and resorts.',
         image: {
-            mobile: '',
-            desktop: '',
+            mobile: hospitalityDesktop,
+            desktop: hospitalityDesktop,
         },
     },
 
@@ -65,8 +76,8 @@ export const applications = [
         title: 'workspaces',
         description: 'Offices, meeting rooms and collaborative areas.',
         image: {
-            mobile: '',
-            desktop: '',
+            mobile: workspacesDesktop,
+            desktop: workspacesDesktop,
         }
     },
 
@@ -85,8 +96,8 @@ export const applications = [
         title: 'retail',
         description: 'stores, boutiques and flagship experiences.',
         image: {
-            mobile: '',
-            desktop: '',
+            mobile: retailDesktop,
+            desktop: retailDesktop,
         }
     },
 
@@ -105,8 +116,8 @@ export const applications = [
         title: 'residential',
         description: 'villas, apartments and private spaces.',
         image: {
-            mobile: '',
-            desktop: '',
+            mobile: residentialDesktop,
+            desktop: residentialDesktop,
         }
     },
 
@@ -215,8 +226,8 @@ export const applications = [
         title: 'public & commercial',
         description: 'civic buildings, cultural spaces and more.',
         image: {
-            mobile: '',
-            desktop: '',
+            mobile: commercialDesktop,
+            desktop: commercialDesktop,
         }
     }
 
