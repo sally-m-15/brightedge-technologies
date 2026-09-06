@@ -17,9 +17,18 @@ export default defineConfig(({ mode }) => ({
             '@': fileURLToPath(new URL('./src', import.meta.url)),
         },
     },
-server: {
-    watch: {
-      usePolling: true, 
+    server: {
+        watch: {
+            usePolling: true,
+        },
     },
-  },
+    build: {
+        rollupOptions: {
+            output: {
+                manualChunks: {
+                    'vue-vendor': ['vue', 'vue-router'],
+                },
+            },
+        },
+    },
 }))
