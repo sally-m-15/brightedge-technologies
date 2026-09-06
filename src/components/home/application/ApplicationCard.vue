@@ -3,19 +3,19 @@
     <div v-observe v-for="application in applications" :key="application.id" class="rounded-2xl group pb-4 border border-border-dark">
     <div  class="relative w-full h-60 overflow-hidden">
 
-           <picture class="block h-full w-full">
+          <picture class="block h-full w-full">
         <source
-          v-if="capability.image.mobile"
+          v-if="application.image.mobile"
           media="(max-width: 767px)"
-          :srcset="capability.image.mobile"
+          :srcset="application.image.mobile"
         />
       
         <img
           v-observe
-          :src="capability.image.desktop"
-          :alt="capability.title"
-          :width="capability.width"
-          :height="capability.height"
+          :src="application.image.desktop"
+          :alt="application.title"
+          :width="application.width"
+          :height="application.height"
           class="block h-full w-full max-h-75 object-cover transition-transform duration-1000 ease-out group-hover:scale-105"
           loading="lazy"
         />
