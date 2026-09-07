@@ -17,12 +17,10 @@
       "
   >
     <slot />
-    <base-icon/>
   </button>
 </template>
 
 <script setup>
-import BaseIcon from './BaseIcon.vue';
 
 </script>
 

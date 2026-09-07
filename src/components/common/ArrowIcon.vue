@@ -14,11 +14,3 @@
     <path d="m13 6 6 6-6 6" />
   </svg>
 </template>
-
-<script setup>
-
-</script>
-
-<style lang="scss" scoped>
-
-</style>

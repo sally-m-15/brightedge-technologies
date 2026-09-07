@@ -36,6 +36,7 @@
           class="rounded-xl bg-primary text-text-dark py-3 whitespace-nowrap shadow-primary hover:bg-primary-hover hover:shadow-2xl"
         >
           GET A CONSULTATION
+          <ArrowIcon />
         </BaseButton>
       </a>
       <RouterLink :to="{ name: 'products' }" class="inline-block">
@@ -43,6 +44,7 @@
           class="rounded-xl border! border-border-light! py-3 whitespace-nowrap bg-bg-dark px-10! text-text-light hover:border-primary! hover:text-primary-hover"
         >
           VIEW PROJECTS
+          <ArrowIcon />
         </BaseButton>
       </RouterLink>
     </div>
@@ -50,6 +52,7 @@
 </template>
 
 <script setup>
+import ArrowIcon from '@/components/common/ArrowIcon.vue';
 import BaseButton from '@/components/common/BaseButton.vue'
 </script>
 

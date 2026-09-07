@@ -24,6 +24,7 @@
     "
   >
     GET A CONSULTATION
+    <ArrowIcon />
   </BaseButton>
 </a>
         </div>
@@ -55,6 +56,7 @@
       "
   >
     GET A CONSULTATION
+    <ArrowIcon />
   </BaseButton>
 </a>
         </div>
@@ -68,6 +70,7 @@ import NavbarNavigation from './NavbarNavigation.vue';
 
 import { onMounted, onUnmounted, ref } from 'vue';
 import MobileMenuToggle from './MobileMenuToggle.vue';
+import ArrowIcon from '../common/ArrowIcon.vue';
 
 const isMenuOpen = ref(false);
 

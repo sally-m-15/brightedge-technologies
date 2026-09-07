@@ -6,24 +6,17 @@
       class="relative flex group overflow-hidden rounded-lg"
       :class="capability.gridClass"
     >
-     <picture class="block h-full w-full">
-  <source
-    v-if="capability.image.mobile"
+    <BaseImage
+    v-observe
     media="(max-width: 767px)"
     :srcset="capability.image.mobile"
-  />
-
-  <img
-    v-observe
     :src="capability.image.desktop"
     :alt="capability.title"
-    :width="capability.width"
-    :height="capability.height"
-    class="block h-full w-full max-h-75 object-cover transition-transform duration-1000 ease-out group-hover:scale-105"
     loading="lazy"
-  />
-</picture>
-
+    imgWidth="capability.width"
+    imgHeight="capability.height"
+        class="block max-h-75 transition-transform duration-1000 ease-out group-hover:scale-105"
+    />
       <div
         class="absolute inset-0 bg-linear-to-r from-black/80 py-4 px-6 flex flex-col justify-between via-black/40 to-transparent"
       >
@@ -39,10 +32,10 @@
           <p class="mt-2 max-w-56 text-sm font-light  text-text-light">
             {{ capability.description }}
           </p>
-            <BaseIcon v-if="index !== 0" 
+            <ArrowIcon v-if="index !== 0" 
             :aria-label="`Learn more about ${capability.title}`"
             class=" self-end border-2! cursor-pointer w-10 h-10  rounded-full  text-primary hover:text-white border-primary! hover:bg-primary mt-6" />
-            <BaseButton v-else class="border-2! border-primary! w-fit rounded-4xl py-1! text-primary hover:text-white  hover:bg-primary mt-6"> Learn More</BaseButton>
+            <BaseButton v-else class="border-2! border-primary! w-fit rounded-4xl py-1! text-primary hover:text-white  hover:bg-primary mt-6"> Learn More <ArrowIcon /></BaseButton>
           </div>
         </div>
       </div>
@@ -53,9 +46,10 @@
 <script setup>
 import BaseButton from '@/components/common/BaseButton.vue';
 import { capabilities } from '../../../data/home/capabilities.js'
-import BaseIcon from '@/components/common/BaseIcon.vue';
 import CapabilityIcon from './CapabilityIcon.vue';
 import { vObserve } from '@/directives/vObserve.js';
+import BaseImage from '@/components/common/BaseImage.vue';
+import ArrowIcon from '@/components/common/ArrowIcon.vue';
 
 </script>
 

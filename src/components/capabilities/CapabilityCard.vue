@@ -3,7 +3,7 @@
     <div 
       v-for="capability in capabilitiesData"
       :key="capability.title"
-      class="shadow-2xl lg:grid lg:grid-rows-[auto_1fr_auto] shadow-border-dark/90 border border-border-dark gap-0 lg:h-[450px] rounded-xl overflow-hidden"
+      class="shadow-2xl group lg:grid lg:grid-rows-[auto_1fr_auto] shadow-border-dark/90 border border-border-dark gap-0 lg:h-[450px] rounded-xl overflow-hidden"
       :class="capability.imagePosition === 'left' ? 'lg:grid-cols-[35%_65%] lg:pe-10' : 'lg:grid-cols-[65%_35%]'"
     >
 
@@ -33,26 +33,21 @@
 
   <div
   :class="[
-    'w-full shadow-2xl shadow-primary/50 h-full lg:row-span-3 lg:row-start-1',
+    'w-full shadow-2xl shadow-primary/50 h-full rounded-2xl lg:row-span-3 lg:row-start-1 overflow-hidden',
     capability.imagePosition === 'right'
       ? 'lg:col-start-2'
       : 'lg:col-start-1'
   ]"
 >
-       <picture>
-  <source 
-    media="(min-width: 1024px)" 
-    :srcset="capability.image.desktop" 
-    width="600" 
-  />
-  <img 
-    :src="capability.image.mobile" 
-    :alt="capability.title" 
-    class="w-full h-full object-cover rounded-2xl"
-    loading="lazy"
-    width="378" 
-  />
-</picture>
+<BaseImage media="(min-width: 1024px)" 
+:srcset="capability.image.desktop"
+sourceWidth="600"
+:src="capability.image.mobile"
+:alt="capability.title"
+loading="lazy"
+imgWidth="378"
+class="transition-transform duration-1000 ease-out group-hover:scale-105 rounded-2xl"
+/>
       </div>
 
           <div class="flex ps-6 flex-wrap lg:flex-nowrap gap-y-4 py-4 lg:py-0 lg:gap-y-0  justify-between items-center ">
@@ -73,6 +68,7 @@
           <a v-observe href="#">
             <BaseButton class="text-primary font-medium! border! border-primary! py-2 rounded-xl hover:bg-primary hover:text-text-light">
               EXPLORE ARCHITECTURAL LIGHTING
+              <ArrowIcon />
             </BaseButton>
           </a>
         </div>
@@ -85,4 +81,6 @@ import { capabilitiesData } from '@/data/capabilities/capabilitiesData';
 import BaseButton from '../common/BaseButton.vue';
 import { vObserve } from '@/directives/vObserve.js';
 import CapabilityIcon from './CapabilityIcon.vue';
+import BaseImage from '../common/BaseImage.vue';
+import ArrowIcon from '../common/ArrowIcon.vue';
 </script>

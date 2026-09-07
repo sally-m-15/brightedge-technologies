@@ -8,6 +8,10 @@ export const navigationLinks = [
     name: 'capabilities',
     path: '/capabilities'
   },
+  {
+    name: 'applications',
+    path: '/applications'
+  },
   { 
     name: 'About',
     path: '/about' 

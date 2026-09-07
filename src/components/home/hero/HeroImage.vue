@@ -76,26 +76,17 @@
                 overflow-hidden
                 "
         >
-        <picture
-            class="
-                h-full 
-                w-full 
-                block
-                
-                "
-            style="clip-path: url(#hero-image-clip);"
-        >
-                <source media="(min-width: 768px)" :srcset="imageLarge" />
-                <img
-                :src="imageSmall"
-                alt="Modern smart lighting interior"
-                class="h-full w-full object-cover object-center"
-                loading="eager"
-                width="412"
-                height="412"
-                fetchpriority="high"
-            />
-        </picture>
+        <BaseImage 
+        style="clip-path: url(#hero-image-clip);"
+        media="(min-width: 768px)"
+        :srcset="imageLarge"
+        :src="imageSmall"
+        alt="Modern smart lighting interior"
+        loading="eager"
+        imgWidth="412"
+        imgHeight="412"
+        fetchpriority="high"
+        />
         </div>
     </div>
 </template>
@@ -103,6 +94,7 @@
 <script setup>
 import imageSmall from '@/assets/images/bright-hero-412.webp'
 import imageLarge from '@/assets/images/bright-hero-768.webp'
+import BaseImage from '@/components/common/BaseImage.vue';
 </script>
 
 <style scoped>
