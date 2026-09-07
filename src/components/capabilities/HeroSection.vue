@@ -8,8 +8,8 @@
      :src="bgImageMobile"
      alt="Modern architectural smart lighting background"
      loading="eager"
-      imgWidth="525"
-        imgHeight="700"
+      imgWidth="610"
+        imgHeight="610"
         fetchpriority="high"
     />
 

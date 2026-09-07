@@ -8,8 +8,8 @@
      :src="bgImageMobile"
      alt="Modern architectural smart lighting background"
      loading="eager"
-      imgWidth="525"
-        imgHeight="700"
+      imgWidth="610"
+        imgHeight="610"
         fetchpriority="high"
     />
 
@@ -28,8 +28,8 @@
 </template>
 
 <script setup>
-import bgImage from '../../assets/images/Modern Metal Facade Design for Commercial & Residential Buildings.jfif';
-import bgImageMobile from '../../assets/images/Modern Metal Facade Design for Commercial & Residential Buildings.jfif';
+import bgImage from '../../assets/images/applicationDesktop.webp';
+import bgImageMobile from '../../assets/images/applicationsMobile.webp';
 import BaseImage from '../common/BaseImage.vue';
 import SectionHeader from '../common/SectionHeader.vue';
 </script>
