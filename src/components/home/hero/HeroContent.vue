@@ -3,10 +3,11 @@
     <p
       class="flex w-fit items-center gap-3 rounded-full border border-border-dark px-5 py-2 text-xs font-medium uppercase text-text-secondary-light md:tracking-[0.2em]"
     >
-      <span  class="h-2 w-2 rounded-full bg-gold bg-primary"></span>
+      <span class="h-2 w-2 rounded-full bg-gold bg-primary"></span>
       Intelligent Lighting Systems
     </p>
-    <h1 v-observe 
+    <h1
+      v-observe
       class="flex flex-col text-5xl font-black tracking-[2px] text-text-light md:text-[60px] xl:text-[80px]"
     >
       Light that
@@ -52,7 +53,7 @@
 </template>
 
 <script setup>
-import ArrowIcon from '@/components/common/ArrowIcon.vue';
+import ArrowIcon from '@/components/common/ArrowIcon.vue'
 import BaseButton from '@/components/common/BaseButton.vue'
 </script>
 

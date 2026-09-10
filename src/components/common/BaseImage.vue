@@ -1,19 +1,11 @@
 <template>
-  <picture class="block w-full h-full"
-  :style="style"
-  >
-    <source 
-      :media="media" 
-      :srcset="srcset" 
-      :width="sourceWidth" 
-      :height="sourceHeight"
-
-    />
-    <img 
-      :src="src" 
-      :alt="alt" 
+  <picture class="block w-full h-full" :style="style">
+    <source :media="media" :srcset="srcset" :width="sourceWidth" :height="sourceHeight" />
+    <img
+      :src="src"
+      :alt="alt"
       :loading="loading"
-      :width="imgWidth" 
+      :width="imgWidth"
       :height="imgHeight"
       class="w-full h-full object-cover"
       :fetchpriority="fetchpriority"
@@ -25,48 +17,48 @@
 defineProps({
   media: {
     type: String,
-    required: true
+    required: true,
   },
   style: {
-    type:[String, Number],
-    required: ''
+    type: [String, Number],
+    required: '',
   },
   fetchpriority: {
     type: String,
     default: 'high',
-    required: ''
+    required: '',
   },
   srcset: {
     type: String,
-    required: true
+    required: true,
   },
   sourceWidth: {
     type: [Number, String],
-    default: ''
+    default: '',
   },
   sourceHeight: {
     type: [Number, String],
-    default: ''
+    default: '',
   },
   src: {
     type: String,
-    required: true
+    required: true,
   },
   alt: {
     type: String,
-    required: true
+    required: true,
   },
   loading: {
     type: String,
-    default: 'lazy'
+    default: 'lazy',
   },
   imgWidth: {
     type: [Number, String],
-    default: ''
+    default: '',
   },
   imgHeight: {
     type: [Number, String],
-    default: ''
-  }
+    default: '',
+  },
 })
 </script>

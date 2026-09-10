@@ -1,64 +1,25 @@
 <template>
-    <div 
-        class="
-            flex flex-col gap-4
-            rounded-2xl
-            border border-primary/40
-            bg-black/60
-            py-6
-            ps-2
-            shadow shadow-primary
-            backdrop-blur-md
-        "
+  <div
+    class="flex flex-col gap-4 rounded-2xl border border-primary/40 bg-black/60 py-6 ps-2 shadow shadow-primary backdrop-blur-md"
+  >
+    <FeatureCard
+      v-for="feature in heroFeatures"
+      :key="feature.title"
+      :title="feature.title"
+      :description="feature.description"
+      card-class="flex items-center gap-4"
+      title-text-class="text-sm font-semibold text-white"
+      description-class="mt-0.5 text-xs text-gray-400"
     >
-        <div
-            v-for="feature in heroFeatures"
-            :key="feature.title"
-            class="flex items-center gap-4"
-        >
-            <div>
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="28"
-                    height="28"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="var(--color-primary)"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    aria-hidden="true"
-                >
-                    <template
-                        v-for="(shape, index) in feature.icon"
-                        :key="index"
-                    >
-                        <path
-                            v-if="shape.type === 'path'"
-                            :d="shape.d"
-                        />
-                        <circle
-                            v-else-if="shape.type === 'circle'"
-                            :cx="shape.cx"
-                            :cy="shape.cy"
-                            :r="shape.r"
-                            :fill="shape.fill"
-                        />
-                    </template>
-                </svg>
-            </div>
-            <div>
-                <h2 class="text-sm font-semibold text-white">
-                    {{ feature.title }}
-                </h2>
-                <p class="mt-0.5 text-xs text-gray-400">
-                    {{ feature.description }}
-                </p>
-            </div>
-        </div>
-    </div>
+      <template #icon>
+        <BaseIcon :icon="feature.icon" svg-width="28" svg-height="28" />
+      </template>
+    </FeatureCard>
+  </div>
 </template>
 
 <script setup>
-import { heroFeatures } from '../../../data/home/heroFeatures'
+import { heroFeatures } from '@/data/home/heroFeatures'
+import FeatureCard from '@/components/common/FeatureCard.vue'
+import BaseIcon from '@/components/common/BaseIcon.vue'
 </script>

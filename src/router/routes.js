@@ -15,7 +15,11 @@ export const routes = [
             },
             {
                 path: 'applications',
-                name: 'applications',
+                redirect: 'applications/hospitality'
+            },
+            {
+                path: 'applications/:slug',
+                name: 'application-details',
                 component: () => import("@/views/ApplicationsView.vue")
             },
             {

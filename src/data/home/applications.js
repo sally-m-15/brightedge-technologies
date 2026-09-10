@@ -11,7 +11,7 @@ import commercialMobile from '../../assets/images/commercialMobile.webp'
 
 export const applications = [
     {
-        id: 1,
+        slug: "hospitality",
         icon: [
             {
                 type: 'path',
@@ -49,7 +49,7 @@ export const applications = [
     },
 
     {
-        id: 2,
+        slug: "workspaces",
         icon: [
             {
                 type: 'rect',
@@ -90,7 +90,7 @@ export const applications = [
     },
 
     {
-        id: 3,
+        slug: "retail",
         icon: [
             {
                 type: 'path',
@@ -114,7 +114,7 @@ export const applications = [
     },
 
     {
-        id: 4,
+        slug: "residential",
         icon: [
             {
                 type: 'path',
@@ -138,7 +138,7 @@ export const applications = [
     },
 
     {
-        id: 5,
+        slug: "public-commercial",
         icon: [
             {
                 type: 'rect',

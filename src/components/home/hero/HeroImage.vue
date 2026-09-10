@@ -1,16 +1,10 @@
 <template>
-    <div class="relative h-full w-full ">
-        <svg
-            class="absolute h-0 w-0"
-            aria-hidden="true"
-        >
-            <defs>
-                <clipPath
-                    id="hero-image-clip"
-                    clipPathUnits="objectBoundingBox"
-                >
-                    <path
-                        d="
+  <div class="relative h-full w-full">
+    <svg class="absolute h-0 w-0" aria-hidden="true">
+      <defs>
+        <clipPath id="hero-image-clip" clipPathUnits="objectBoundingBox">
+          <path
+            d="
                             M 0.27 0
                             L 1 0
                             L 1 1
@@ -20,17 +14,17 @@
                             Q 0.23 0.005 0.27 0
                             Z
                         "
-                    />
-                </clipPath>
-            </defs>
-        </svg>
-        <svg
-            class="pointer-events-none absolute inset-0 z-0 h-full w-full"
-            viewBox="0 0 1000 1000"
-            preserveAspectRatio="none"
-        >
-            <path
-                d="
+          />
+        </clipPath>
+      </defs>
+    </svg>
+    <svg
+      class="pointer-events-none absolute inset-0 z-0 h-full w-full"
+      viewBox="0 0 1000 1000"
+      preserveAspectRatio="none"
+    >
+      <path
+        d="
                     M 270 0
                     L 1000 0
                     L 1000 1000
@@ -42,16 +36,16 @@
                     Q 230 5 270 0
                     Z
                 "
-                fill="#F5a623"
-            />
-        </svg>
-        <svg
-            class="pointer-events-none absolute inset-0 z-10 h-full w-full "
-            viewBox="0 0 1000 1000"
-            preserveAspectRatio="none"
-        >
-            <path
-                d="
+        fill="#F5a623"
+      />
+    </svg>
+    <svg
+      class="pointer-events-none absolute inset-0 z-10 h-full w-full"
+      viewBox="0 0 1000 1000"
+      preserveAspectRatio="none"
+    >
+      <path
+        d="
                     M 1000 0
                     L 270 0
                     Q 230 5 210 80
@@ -60,24 +54,16 @@
                     L 0 1500
                     L 0 1002
                 "
-                fill="none"
-                class="stroke-[#F5a623]"
-                stroke-width="2"
-                vector-effect="non-scaling-stroke"
-                stroke-linecap="round"
-            />
-        </svg>
-        <div
-            class="
-                relative
-                z-5 
-                h-full 
-                w-full 
-                overflow-hidden
-                "
-        >
-        <BaseImage 
-        style="clip-path: url(#hero-image-clip);"
+        fill="none"
+        class="stroke-[#F5a623]"
+        stroke-width="2"
+        vector-effect="non-scaling-stroke"
+        stroke-linecap="round"
+      />
+    </svg>
+    <div class="relative z-5 h-full w-full overflow-hidden">
+      <BaseImage
+        style="clip-path: url(#hero-image-clip)"
         media="(min-width: 768px)"
         :srcset="imageLarge"
         :src="imageSmall"
@@ -86,16 +72,15 @@
         imgWidth="412"
         imgHeight="412"
         fetchpriority="high"
-        />
-        </div>
+      />
     </div>
+  </div>
 </template>
 
 <script setup>
 import imageSmall from '@/assets/images/bright-hero-412.webp'
 import imageLarge from '@/assets/images/bright-hero-768.webp'
-import BaseImage from '@/components/common/BaseImage.vue';
+import BaseImage from '@/components/common/BaseImage.vue'
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>
