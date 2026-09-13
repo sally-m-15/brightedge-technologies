@@ -23,7 +23,7 @@
         </span>
       </span>
     </component>
-    <span class="text-md font-medium">
+    <span  v-Observe class="text-md font-medium">
       {{ summary }}
     </span>
     <p

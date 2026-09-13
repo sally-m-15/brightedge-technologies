@@ -9,10 +9,10 @@
             description="Discover our tailored lighting solutions for different architectural settings."
             />
             <div class="grid grid-cols-4 mt-10 gap-6">
-                <div>
+                <div  v-observe>
                     <ApplicationsSidebar />
                 </div>
-                <div class="col-span-3 h-full">
+                <div  v-observe class="col-span-3 h-full">
                     <ApplicationDetails />
                 </div>
             </div>
@@ -25,6 +25,8 @@ import ApplicationDetails from '@/components/applications/ApplicationDetails.vue
 import ApplicationsSidebar from '@/components/applications/ApplicationsSidebar.vue';
 import HeroSection from '@/components/applications/HeroSection.vue';
 import SectionHeader from '@/components/common/SectionHeader.vue';
+import { vObserve } from '@/directives/vObserve.js'
+
 
 </script>
 

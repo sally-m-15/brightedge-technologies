@@ -1,12 +1,17 @@
 <template>
   <div class="relative flex flex-col py-4">
-    <FeatureCard
-      v-Observe
+    <router-link 
       v-for="(application, index) in applications"
       :key="application.id || index"
+      :to="{name: 'application-details', params:{slug: application.slug}}"
+    >
+      <FeatureCard
+      v-Observe
       :title="application.title"
       :description="application.description"
-      card-class="relative flex items-center bg-surface-dark justify-evenly rounded-2xl border-border-dark hover:bg-text-secondary-dark my-1 border hover:border-primary py-6"
+      :card-class="['relative flex items-center bg-surface-dark justify-evenly rounded-2xl border my-1 py-6 ',
+      application.slug === route.params.slug ? 'border-primary text-secondary-dark' : 'hover:border-primary hover:bg-text-secondary-dark border-border-dark'
+      ]"
       icon-class="w-16 h-16 shrink-0"
       title-class="flex flex-col"
       title-text-class="text-text-light font-medium text-lg capitalize"
@@ -28,6 +33,7 @@
         </div>
       </template>
     </FeatureCard>
+    </router-link>
   </div>
 </template>
 
@@ -37,4 +43,7 @@ import ArrowIcon from '../common/ArrowIcon.vue'
 import FeatureCard from '../common/FeatureCard.vue'
 import BaseIcon from '../common/BaseIcon.vue'
 import { vObserve } from '@/directives/vObserve.js'
+import { useRoute } from 'vue-router'
+
+const route = useRoute();
 </script>
