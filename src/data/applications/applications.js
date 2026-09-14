@@ -1,4 +1,3 @@
-import image from '../../assets/images/applicationDesktop.webp'
 import hospitalityDesktop from '../../assets/images/hospitalityDesktop.webp'
 import hospitalityMobile from '../../assets/images/hospitalityMobile.webp'
 import workspacesDesktop from '../../assets/images/workspacesDesktop.webp'
@@ -9,45 +8,46 @@ import residentialDesktop from '../../assets/images/residentialDesktop.webp'
 import residentialMobile from '../../assets/images/residentialMobile.webp'
 import commercialDesktop from '../../assets/images/commercialDesktop.webp'
 import commercialMobile from '../../assets/images/commercialMobile.webp'
-import hospitalityLobbyImgMobile from '../../../../h2.jfif'
-import hospitalityLobbyImgDesktop from '../../../../h2.jfif'
-import hospitalityRoomImgMobile from '../../../../h1.jfif'
-import hospitalityRoomImgDesktop from '../../../../h1.jfif'
-import hospitalityDiningImgMobile from '../../../../h4.jfif'
-import hospitalityDiningImgDesktop from '../../../../h4.jfif'
-import hospitalityResortImgMobile from '../../../../h3.jfif'
-import workspaceOfficeImgMobile from '../../../../w1.jfif'
-import workspaceOfficeImgDesktop from '../../../../w1.jfif'
-import workspaceMeetingImgMobile from '../../../../w2.jfif'
-import workspaceMeetingImgDesktop from '../../../../w2.jfif'
-import workspaceLoungeImgMobile from '../../../../w3.jfif'
-import workspaceLoungeImgDesktop from '../../../../w3.jfif'
-import workspaceExecutiveImgMobile from '../../../../w4.jfif'
-import workspaceExecutiveImgDesktop from '../../../../w4.jfif'
-import retailStoreImgMobile from '../../../../r1.jfif'
-import retailStoreImgDesktop from '../../../../r1.jfif'
-import retailDisplayImgMobile from '../../../../r2.jfif'
-import retailDisplayImgDesktop from '../../../../r2.jfif'
-import retailWindowImgMobile from '../../../../r3.jfif'
-import retailWindowImgDesktop from '../../../../r3.jfif'
-import retailFittingRoomImgMobile from '../../../../r4.jfif'
-import retailFittingRoomImgDesktop from '../../../../r4.jfif'
-import residentialLivingImgMobile from '../../../../rl1.jfif'
-import residentialLivingImgDesktop from '../../../../rl1.jfif'
-import residentialBedroomImgMobile from '../../../../rl2.jfif'
-import residentialBedroomImgDesktop from '../../../../rl2.jfif'
-import residentialKitchenImgMobile from '../../../../rl3.jfif'
-import residentialKitchenImgDesktop from '../../../../rl3.jfif'
-import residentialGardenImgMobile from '../../../../rl4.jfif'
-import residentialGardenImgoDesktop from '../../../../rl4.jfif'
-import publicAtriumImgMobile from '../../../../p1.jfif'
-import publicAtriumImgDesktop from '../../../../p1.jfif'
-import publicFacadeImgMobile from '../../../../p2.jfif'
-import publicFacadeImgDesktop from '../../../../p2.jfif'
-import publicPlazaImgMobile from '../../../../p3.jfif'
-import publicPlazaImgDesktop from '../../../../p3.jfif'
-import publicCulturalImgMobile from '../../../../p4.jfif'
-import publicCulturalImgDesktop from '../../../../p4.jfif'
+import hospitalityLobbyImgMobile from '../../assets/images/hospitality/hospitalityLobbyImgMobile.webp'
+import hospitalityLobbyImgDesktop from '../../assets/images/hospitality/hospitalityLobbyImgDesktop.webp'
+import hospitalityRoomImgMobile from '../../assets/images/hospitality/hospitalityRoomImgMobile.webp'
+import hospitalityRoomImgDesktop from '../../assets/images/hospitality/hospitalityRoomImgDesktop.webp'
+import hospitalityDiningImgMobile from '../../assets/images/hospitality/hospitalityDiningImgMobile.webp'
+import hospitalityDiningImgDesktop from '../../assets/images/hospitality/hospitalityDiningImgDesktop.webp'
+import hospitalityResortImgMobile from '../../assets/images/hospitality/hospitalityResortImgMobile.webp'
+import hospitalityResortImgDesktop from '../../assets/images/hospitality/hospitalityResortImgDesktop.webp'
+import workspaceOfficeImgMobile from '../../assets/images/hospitality/workspaceOfficeImgMobile.webp'
+import workspaceOfficeImgDesktop from '../../assets/images/hospitality/workspaceOfficeImgDesktop.webp'
+import workspaceMeetingImgMobile from '../../assets/images/hospitality/workspaceMeetingImgMobile.webp'
+import workspaceMeetingImgDesktop from '../../assets/images/hospitality/workspaceMeetingImgDesktop.webp'
+import workspaceLoungeImgMobile from '../../assets/images/hospitality/workspaceLoungeImgMobile.webp'
+import workspaceLoungeImgDesktop from '../../assets/images/hospitality/workspaceLoungeImgDesktop.webp'
+import workspaceExecutiveImgMobile from '../../assets/images/hospitality/workspaceExecutiveImgMobile.webp'
+import workspaceExecutiveImgDesktop from '../../assets/images/hospitality/workspaceExecutiveImgDesktop.webp'
+import retailStoreImgMobile from '../../assets/images/hospitality/retailStoreImgMobile.webp'
+import retailStoreImgDesktop from '../../assets/images/hospitality/retailStoreImgDesktop.webp'
+import retailDisplayImgMobile from '../../assets/images/hospitality/retailDisplayImgMobile.webp'
+import retailDisplayImgDesktop from '../../assets/images/hospitality/retailDisplayImgDesktop.webp'
+import retailWindowImgMobile from '../../assets/images/hospitality/retailWindowImgMobile.webp'
+import retailWindowImgDesktop from '../../assets/images/hospitality/retailWindowImgDesktop.webp'
+import retailFittingRoomImgMobile from '../../assets/images/hospitality/retailFittingRoomImgMobile.webp'
+import retailFittingRoomImgDesktop from '../../assets/images/hospitality/retailFittingRoomImgMobile.webp'
+import residentialLivingImgMobile from '../../assets/images/hospitality/residentialLivingImgMobile.webp'
+import residentialLivingImgDesktop from '../../assets/images/hospitality/residentialLivingImgDesktop.webp'
+import residentialBedroomImgMobile from '../../assets/images/hospitality/residentialBedroomImgMobile.webp'
+import residentialBedroomImgDesktop from '../../assets/images/hospitality/residentialBedroomImgDesktop.webp'
+import residentialKitchenImgMobile from '../../assets/images/hospitality/residentialKitchenImgMobile.webp'
+import residentialKitchenImgDesktop from '../../assets/images/hospitality/residentialKitchenImgDesktop.webp'
+import residentialGardenImgMobile from '../../assets/images/hospitality/residentialGardenImgMobile.webp'
+import residentialGardenImgoDesktop from '../../assets/images/hospitality/residentialGardenImgoDesktop.webp'
+import publicAtriumImgMobile from '../../assets/images/hospitality/publicAtriumImgMobile.webp'
+import publicAtriumImgDesktop from '../../assets/images/hospitality/publicAtriumImgDesktop .webp'
+import publicFacadeImgMobile from '../../assets/images/hospitality/publicFacadeImgMobile.webp'
+import publicFacadeImgDesktop from '../../assets/images/hospitality/publicFacadeImgDesktop.webp'
+import publicPlazaImgMobile from '../../assets/images/hospitality/publicPlazaImgMobile.webp'
+import publicPlazaImgDesktop from '../../assets/images/hospitality/publicPlazaImgDesktop.webp'
+import publicCulturalImgMobile from '../../assets/images/hospitality/publicCulturalImgMobile.webp'
+import publicCulturalImgDesktop from '../../assets/images/hospitality/publicCulturalImgDesktop.webp'
 
 
 
@@ -175,7 +175,7 @@ export const applicationDetails = [
     images: [
       { mobile: hospitalityDiningImgMobile, desktop: hospitalityDiningImgDesktop },
       { mobile: hospitalityLobbyImgMobile, desktop: hospitalityLobbyImgDesktop  },
-      { mobile: hospitalityResortImgMobile, desktop: hospitalityRoomImgDesktop  },
+      { mobile: hospitalityResortImgMobile, desktop: hospitalityResortImgDesktop  },
       { mobile: hospitalityRoomImgMobile, desktop: hospitalityRoomImgDesktop  },
     ],
   },
@@ -513,8 +513,8 @@ export const applicationDetails = [
     },
     images: [
       { mobile: publicAtriumImgMobile , desktop: publicAtriumImgDesktop  },
-      { mobile: publicCulturalImgMobile , desktop: publicCulturalImgMobile },
-      { mobile: publicFacadeImgMobile , desktop: publicFacadeImgMobile  },
+      { mobile: publicCulturalImgMobile , desktop: publicCulturalImgDesktop },
+      { mobile: publicFacadeImgMobile , desktop: publicFacadeImgDesktop  },
       { mobile: publicPlazaImgMobile , desktop: publicPlazaImgDesktop },
     ],
   },
