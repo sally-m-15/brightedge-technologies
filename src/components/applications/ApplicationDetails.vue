@@ -26,7 +26,7 @@
             :accent="currentApplication.title"
             :summary="currentApplication.summary"
             :description="currentApplication.description"
-            tag="h4"
+            tag="h3"
         />
         </div>
 
